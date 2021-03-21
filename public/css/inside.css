@@ -1,0 +1,95 @@
+/*style navbar inside */
+.auth-login{
+  display: inherit;
+}
+.auth-login a:hover{
+    color: var(--color-green);
+    background-color: var(--light) !important;
+}
+@media (max-width: 991.98px) { 
+  .auth-login{
+    display: inline;
+  }
+ }
+/*style home page*/
+.home {
+    padding-top:30px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(45deg,var(--color-green),black);
+}
+.home .from{
+    background-color: white;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+.home [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .home i {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    border-radius: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .home [type=radio] + i {
+    cursor: pointer;
+  }
+  .home [type=radio]:checked + i {
+    background-color: var(--color-green);
+  }
+  /*style histrory page*/
+  .history{
+    background-color: white;
+    padding:20px 50px 20px 50px;
+    border-radius: 5px;
+  }
+  .history .card{
+    margin-top: 20px;
+  }
+  .history .card-title{
+    font-weight: 500;
+  }
+  .history .chart{
+    padding-top: 20px;
+  }
+  /*style exrsices home*/
+  .exrsices{
+    background-color: white;
+    padding:20px 50px 20px 50px;
+    border-radius: 5px;
+  }
+  .exrsices .align-self-start{
+    height: 260px;
+    margin-bottom: 50px;
+  }
+  .exrsices .page-item{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .exrsices .page-item.active .page-link{
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    border-radius: 2px;
+    color:black;
+  }
+  .exrsices .page-item a{
+    color:black;
+  }
+  /*style account page*/
+  .account{
+    background-color: white;
+    padding:20px 50px 20px 50px;
+    border-radius: 5px;
+  }
+  .account .scrollspy-example{
+    width: 60%;
+    margin-left: 100px;
+  }

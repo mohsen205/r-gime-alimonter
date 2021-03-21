@@ -1,0 +1,262 @@
+:root{
+    --color-green :  rgb(122, 255, 81);
+}
+.logo{
+    height: 30px;
+}
+/*style welcome page */
+/*header*/
+header{
+    
+    background-position: center;
+    background-size: cover;
+}
+header .overlay{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header .header{
+    color :white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+header .header .btn{
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+header .header .display-5{
+    font-size: 50px;
+}
+/*navbar*/
+.navbar {
+    transition: all 0.5s ease;
+}
+.navbar a{
+    color : white;
+    font-weight: 500;
+    width: 70px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.navbar .navbar-nav a:hover {
+    background-color: var(--color-green);
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+.navbar .navbar-nav .btn-success{
+    background-color: var(--color-green);
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border:none;
+    margin-left: 20px;
+}
+
+.bg-light a {
+    color :black; 
+    font-weight: 500;
+}
+.navbar li a {
+    width: 110px;
+}
+/*why us*/
+.about-us{
+    padding: 100px 0px 100px 0px;
+    color:black
+}
+.about-us i{
+    color: var(--color-green);
+}
+.about-us .h2{
+    margin-bottom: 20px;
+}
+.about-us .h2::after{
+    content :'';
+    width: 50px;
+    height: 2px;
+    border-radius: 0.5px;
+    background-color: var(--color-green);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.about-us .card{
+    padding: 20px 0px 20px 0px;
+    -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);;
+}
+/*service*/
+.service{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.service .h2::after{
+    content :'';
+    width: 50px;
+    height: 2px;
+    border-radius: 0.5px;
+    background-color: var(--color-green);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*contact*/
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white
+}
+.contact .h2::after{
+    content :'';
+    width: 50px;
+    height: 2px;
+    border-radius: 0.5px;
+    background-color: var(--color-green);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contact textarea {
+    height: 160px;
+}
+.contact .btn {
+    background-color: var(--color-green);
+    border: none;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+/*footer*/
+.footer{
+    padding-top: 100px;
+    color:black 
+}
+.footer .social-media{
+    display: flex;
+    justify-content: center;
+}
+.footer .social-media i{
+    margin-left: 20px;
+    opacity: 0.7;
+    color : black;
+}
+.footer .social-media i:hover{
+    color:var(--color-green);
+    opacity: 1;
+}
+@media (max-width: 991.98px) { 
+    .navbar .navbar-nav a{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .navbar-nav a:hover {
+        background-color: transparent;
+        border-radius: 0px;
+    }
+    .navbar .navbar-nav .btn-success{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+ }
+/*style login page*/
+/*login*/
+.login {
+   background-image:  linear-gradient(45deg, var(--color-green) , black);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.login h1{
+    margin-bottom: 20px;
+}
+
+.login .img-fluid {
+    height: 20px;
+    margin-bottom:3px;
+    margin-right:5px;
+}
+.facebook-btn{
+    background-color: #3b5998;
+    border-color: #3b5998;
+    text-decoration: none;
+}
+.google-btn{
+    border: 0.2px solid;
+}
+.login .card{
+   /* width: 500px;*/
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login label{
+    font-weight: 600;
+}
+.login .btn-link{
+    color: grey;
+}
+.login .btn-1{
+    width: 390px;
+    background-color: var(--color-green);
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+/*style email page*/
+/*reset-password*/
+.reset-password{
+    background-image: linear-gradient(45deg, var(--color-green), black);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.reset-password .card{
+    padding: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reset-password label{
+    font-weight: 600;
+}
+.reset-password .btn-1{
+    width: 390px;
+    background-color: var(--color-green);
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+/*style register page */
+/*register*/
+.register{
+    background-image: linear-gradient(45deg, var(--color-green), black);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.register .card{
+    width: 500px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.register  label{
+    font-weight: 600;
+}
+.register .btn-1{
+    width: 390px;
+    background-color: var(--color-green);
+    border: none;
+    color: black;
+    font-weight: bold;
+}
